@@ -1,0 +1,1 @@
+web: gunicorn jz1697-django-app.wsgi
