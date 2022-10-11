@@ -20,12 +20,6 @@ class IndexView(generic.ListView):
             pub_date__lte=timezone.now()
         ).order_by('-pub_date')[:5]
 
-
-class DetailView(generic.DetailView):
-    model = Question
-    template_name = 'polls/detail.html'
-
-
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
@@ -51,7 +45,8 @@ def vote(request, question_id):
 
 
 class DetailView(generic.DetailView):
-    ...
+    model = Question
+    template_name = 'polls/detail.html'
 
     def get_queryset(self):
         """
