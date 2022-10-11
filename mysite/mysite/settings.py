@@ -127,7 +127,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['enigmatic-cliffs-62735.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['enigmatic-cliffs-62735.herokuapp.com', '127.0.0.1', 'test-django-tutorial.herokuapp.com']
 
 
 
